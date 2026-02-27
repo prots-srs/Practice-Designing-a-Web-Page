@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Practice Designing a Web Page - report</title>
+  <link rel="stylesheet"
+        href="style.css">
+</head>
+
+</html>
+
+<body class="body">
+  <div class="wrapper">
+    <div class="left_panel">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right_panel">
+
+      <div class="container">
+
+        <h1>Services Availability Report</h1>
+        <div class="meta">
+          <strong>Report Period:</strong> January 1, 2026 – January 31, 2026<br>
+          <strong>Generated On:</strong> February 1, 2026<br>
+          <strong>Environment:</strong> Production
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Service Name</th>
+              <th>Endpoint</th>
+              <th>Uptime (%)</th>
+              <th>Total Downtime</th>
+              <th>Incidents</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Authentication API</td>
+              <td>/api/auth</td>
+              <td>99.98%</td>
+              <td>8 minutes</td>
+              <td>1</td>
+              <td class="status-up">Operational</td>
+            </tr>
+            <tr>
+              <td>Payments Service</td>
+              <td>/api/payments</td>
+              <td>99.45%</td>
+              <td>4 hours 12 minutes</td>
+              <td>3</td>
+              <td class="status-warning">Degraded</td>
+            </tr>
+            <tr>
+              <td>Notification Service</td>
+              <td>/api/notifications</td>
+              <td>97.80%</td>
+              <td>15 hours 30 minutes</td>
+              <td>5</td>
+              <td class="status-down">Major Incident</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="summary">
+          <h3>Summary</h3>
+          <p>
+            Overall system availability for the reporting period was <strong>99.07%</strong>.
+            One major incident occurred affecting the Notification Service.
+            Preventative measures are being implemented to improve stability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    © 2026 Report — Internal Use Only
+  </div>
+</body>
+
+</html>
