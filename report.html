@@ -9,6 +9,47 @@
   <title>Practice Designing a Web Page - report</title>
   <link rel="stylesheet"
         href="style.css">
+
+  <script>
+    const jsonData = {
+      "services": [
+        {
+          "Service Name": "Authentication API",
+          "Endpoint": "/api/auth",
+          "Uptime (%)": "99.98",
+          "Total Downtime": "8 minutes",
+          "Incidents": "1",
+          "Status": {
+            "title": "Operational",
+            "class": "status-up"
+          }
+        },
+        {
+          "Service Name": "Payments Service",
+          "Endpoint": "/api/payments",
+          "Uptime (%)": "99.45",
+          "Total Downtime": "4 hours 12 minutes",
+          "Incidents": "3",
+          "Status": {
+            "title": "Degraded",
+            "class": "status-warning"
+          }
+        },
+        {
+          "Service Name": "Notification Service",
+          "Endpoint": "/api/notifications",
+          "Uptime (%)": "97.80",
+          "Total Downtime": "15 hours 30 minutes",
+          "Incidents": "5",
+          "Status": {
+            "title": "Major Incident",
+            "class": "status-down"
+          }
+        }
+      ]
+
+    };
+  </script>
 </head>
 
 </html>
@@ -37,42 +78,45 @@
           <strong>Environment:</strong> Production
         </div>
 
-        <table>
+        <div id="loader"
+             class="loader"></div>
+        <table id="main-table">
           <thead>
             <tr>
-              <th>Service Name</th>
-              <th>Endpoint</th>
-              <th>Uptime (%)</th>
-              <th>Total Downtime</th>
-              <th>Incidents</th>
-              <th>Status</th>
+              <!-- <th>Service Name</th>
+                <th>Endpoint</th>
+                <th>Uptime (%)</th>
+                <th>Total Downtime</th>
+                <th>Incidents</th>
+                <th>Status</th> -->
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Authentication API</td>
-              <td>/api/auth</td>
-              <td>99.98%</td>
-              <td>8 minutes</td>
-              <td>1</td>
-              <td class="status-up">Operational</td>
-            </tr>
-            <tr>
-              <td>Payments Service</td>
-              <td>/api/payments</td>
-              <td>99.45%</td>
-              <td>4 hours 12 minutes</td>
-              <td>3</td>
-              <td class="status-warning">Degraded</td>
-            </tr>
-            <tr>
-              <td>Notification Service</td>
-              <td>/api/notifications</td>
-              <td>97.80%</td>
-              <td>15 hours 30 minutes</td>
-              <td>5</td>
-              <td class="status-down">Major Incident</td>
-            </tr>
+            <!-- <tr>
+                <td>Authentication API</td>
+                <td>/api/auth</td>
+                <td>99.98%</td>
+                <td>8 minutes</td>
+                <td>1</td>
+                <td class="
+               status-up">Operational</td>
+          </tr>
+          <tr>
+            <td>Payments Service</td>
+            <td>/api/payments</td>
+            <td>99.45%</td>
+            <td>4 hours 12 minutes</td>
+            <td>3</td>
+            <td class="status-warning">Degraded</td>
+          </tr>
+          <tr>
+            <td>Notification Service</td>
+            <td>/api/notifications</td>
+            <td>97.80%</td>
+            <td>15 hours 30 minutes</td>
+            <td>5</td>
+            <td class="status-down">Major Incident</td>
+          </tr> -->
           </tbody>
         </table>
 
@@ -90,6 +134,9 @@
       </div>
     </div>
   </div>
+
 </body>
+
+<script src="script.js"></script>
 
 </html>
